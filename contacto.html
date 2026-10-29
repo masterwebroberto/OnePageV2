@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro | Contacto</title>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+    <!-- Header Semántico -->
+    <header class="main-header">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            <span>TechPro</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="contacto.html" class="active"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección 1: Formulario Completo y Validado -->
+        <section class="form-section">
+            <h2>Contáctanos o Regístrate</h2>
+            <form action="#" method="post" enctype="multipart/form-data" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo (*):</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico (*):</label>
+                    <input type="email" id="correo" name="correo" required placeholder="nombre@dominio.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad (*):</label>
+                    <input type="number" id="edad" name="edad" min="18" max="65" value="18" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha Preferida de Inicio:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Curso de Interés:</label>
+                    <select id="curso" name="curso">
+                        <option value="html">Maquetación HTML5</option>
+                        <option value="css" selected>Estilos CSS3</option>
+                        <option value="responsive">Diseño Responsive</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Seleccione Color de Tema:</label>
+                    <input type="color" id="color" name="color" value="#0d6efd">
+                </div>
+
+                <div class="form-group">
+                    <label for="archivo">Adjuntar CV / Archivo (PDF, DOCX):</label>
+                    <input type="file" id="archivo" name="archivo" accept=".pdf,.docx">
+                </div>
+
+                <div class="form-buttons">
+                    <input type="submit" value="Enviar Datos">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        </section>
+
+        <!-- Sección 2: Mapa Responsive -->
+        <section class="map-section">
+            <h2>Nuestra Ubicación</h2>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3787720937397!2d-77.0365256845814!3d-12.08620299144122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c433333333%3A0x123456789abcdef!2sSan%20Isidro%2C%20Lima!5e0!3m2!1ses!2spe!4v1620000000000" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Sección 3: Galería Complementaria -->
+        <section class="gallery-section">
+            <h2>Conoce Nuestras Instalaciones</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Trabajo en equipo">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Clase de código">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Estructurado -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre TechPro</h3>
+                <p>Plataforma educativa dedicada a formar a los futuros desarrolladores web con estándares actuales.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <address>
+                    <p><i class="fa-solid fa-location-dot"></i> Av. Principal 123, Lima</p>
+                    <p><i class="fa-solid fa-envelope"></i> informe@techpro.edu.pe</p>
+                    <p><i class="fa-solid fa-phone"></i> +51 999 888 777</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
